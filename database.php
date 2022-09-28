@@ -3,7 +3,7 @@
 $host  = "localhost";
 $dbuser = "root";
 $dbpass = "";
-$dbname = "GFG";
+$dbname = "snackbartest";
 
 // Maak een  database connectie
 $conn = mysqli_connect($host, $dbuser, $dbpass, $dbname);
