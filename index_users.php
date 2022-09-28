@@ -1,4 +1,4 @@
-<?php require 'database.php';
+<?php require 'classes/database.php';
 
 $sql = "SELECT * FROM users";
 
