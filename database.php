@@ -28,3 +28,4 @@ class Database
 }
 
 $databaseConnection = new Database();
+$conn = $databaseConnection->getConnection();
