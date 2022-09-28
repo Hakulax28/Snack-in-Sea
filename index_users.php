@@ -1,9 +1,13 @@
 <?php
-session_start();
 
-if (!$_SESSION["is_logged_in"]) {
-   header("location: inloggen.php");
-} ?>
+
+require 'classes/database.php';
+$databaseConnection = new Database();
+$conn = $databaseConnection->getConnection();
+
+?>
+
+<!-- -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -17,18 +21,7 @@ if (!$_SESSION["is_logged_in"]) {
 </head>
 
 <body>
-   <header>
-      <p>Test</p>
-   </header>
-   <div class="">
 
-      <div>
-
-      </div>
-   </div>
-   <footer>
-
-   </footer>
 </body>
 
 </html>
