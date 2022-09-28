@@ -1,8 +1,9 @@
-<?php require 'classes/database.php';
+<?php
 
-$sql = "SELECT * FROM users";
 
-$users = mysqli_fetch_all(mysqli_query($conn, $sql), MYSQLI_ASSOC);
+require 'classes/Database.php';
+$databaseConnection = new Database();
+$conn = $databaseConnection->getConnection();
 
 ?>
 
