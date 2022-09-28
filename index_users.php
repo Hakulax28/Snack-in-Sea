@@ -1,7 +1,7 @@
 <?php
 
 
-require 'classes/Database.php';
+require 'classes/database.php';
 $databaseConnection = new Database();
 $conn = $databaseConnection->getConnection();
 
