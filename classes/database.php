@@ -9,20 +9,20 @@
 class Database
 {
 
-    private $host  = "localhost";
-    private $dbuser = "root";
-    private $dbpass = "";
-    private $dbname = "fake-app";
+   private $host  = "localhost";
+   private $dbuser = "root";
+   private $dbpass = "";
+   private $dbname = "fake-app";
 
-    private $conn;
+   private $conn;
 
-    public function __construct()
-    {
-        $this->conn =  mysqli_connect($this->host, $this->dbuser, $this->dbpass, $this->dbname);
-    }
+   public function __construct()
+   {
+      $this->conn =  mysqli_connect($this->host, $this->dbuser, $this->dbpass, $this->dbname);
+   }
 
-    public function getConnection()
-    {
-        return $this->conn;
-    }
+   public function getConnection()
+   {
+      return $this->conn;
+   }
 }
