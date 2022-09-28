@@ -8,9 +8,17 @@
    <link rel="stylesheet" href="style.css">
    <title>Snack'in Sea</title>
 </head>
+<header>
+
+</header>
 
 <body>
+   <div>
 
+   </div>
 </body>
+<footer>
+
+</footer>
 
 </html>
