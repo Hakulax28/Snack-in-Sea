@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="process.php" method="post">
+    <form action="login_proces.php" method="post">
         <input type="text" name="username_email" id="" placeholder="Vul je username of email in">
         <button type="submit">Inloggen</button>
     </form>
