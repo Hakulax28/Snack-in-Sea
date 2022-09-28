@@ -37,15 +37,15 @@ if ($result) {
       $_SESSION["rol"] = $user["rol"];
 
 
-      var_dump($_SESSION);
+      //var_dump($_SESSION);
       //Hier bekijkt hij of degene die heeft ingelogd een gebruiker of personeel is.
-      if ($_SESSION["rol"] == "personeel") {
-         echo "U kan nu alles doen";
-         header("location: gebruiker-overzicht.php");
-      } else if ($_SESSION["rol"] == "gebruiker") {
-         echo "U kan alleen een melding registreren";
-         header("location: melding-overzicht.php");
-      }
+      //if ($_SESSION["rol"] == "personeel") {
+      //   echo "U kan nu alles doen";
+      //   header("location: gebruiker-overzicht.php");
+      //} else if ($_SESSION["rol"] == "gebruiker") {
+      //   echo "U kan alleen een melding registreren";
+      //   header("location: melding-overzicht.php");
+      //}
    }
 }
 
