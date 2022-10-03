@@ -29,7 +29,7 @@ h1 {
 .main {
   display: grid;
   text-align: center;
-  grid-template-columns: 460px 460px;
+  grid-template-columns: 270px 650px 650px 270px;
   grid-template-rows: 720px;
 }
 .item {
