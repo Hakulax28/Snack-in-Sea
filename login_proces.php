@@ -5,9 +5,9 @@ $email = $_POST["email"];
 
 require 'classes/database.php';
 
-$sql = "SELECT FROM users WHERE email = $email";
+$sql = "SELECT * FROM users WHERE email = '$email' ";
 
-$result = mysqli_query($conn, $sql);
+$result = mysqli_query((new Database())->getConnection(), $sql);
 
 if (!is_null($result)) {
     $user = mysqli_fetch_assoc($result); // 1 rij
