@@ -26,16 +26,10 @@ session_start();
     </header>
     <div class="main">
         <div class="item items1">
-            <h1 class="titel">Bestel</h1>
+            <a href="">Bestel</a>
         </div>
         <div class="item items2">
-            <h1 class="titel">Producten</h1>
-        </div>
-        <div class="item items3">
-            <h1 class="titel">Bestel</h1>
-        </div>
-        <div class="item items4">
-            Test
+            <a href="">Product</a>
         </div>
     </div>
     <footer>
