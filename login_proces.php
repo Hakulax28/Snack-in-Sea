@@ -21,14 +21,14 @@ if (!is_null($result)) {
 
         $_SESSION["email"] = $user["email"];
         $_SESSION["is_logged_in"] = true;
-        $_SESSION["rol"] = $user["rol"];
+        //$_SESSION["rol"] = $user["rol"];
     }
 
-    if ($_SESSION["rol"] == "medewerker") {
-        echo "U kan nu alles doen";
-        header("location: dashboard.php");
-    } else if ($_SESSION["rol"] == "klant") {
-        echo "U kan alleen een melding registreren";
-        header("location: product-overzicht.php");
-    }
+    //if ($_SESSION["rol"] == "medewerker") {
+    //echo "U kan nu alles doen";
+    //header("location: dashboard.php");
+    //} else if ($_SESSION["rol"] == "klant") {
+    //echo "U kan alleen een melding registreren";
+    //header("location: product-overzicht.php");
+    //}
 }
