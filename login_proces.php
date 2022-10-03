@@ -21,6 +21,6 @@ if (!is_null($result)) {
         $_SESSION["user"] = $user;
         $_SESSION["is_logged_in"] = true;
 
-        header("location: dashboard.php");
+        header("location: classes/dashboard.php");
     }
 }
