@@ -8,8 +8,12 @@ header {
 p {
   color: white;
 }
+h1 {
+  color: white;
+}
 .main {
   display: grid;
+  text-align: center;
   grid-template-columns: 350px 350px;
 }
 .item {
