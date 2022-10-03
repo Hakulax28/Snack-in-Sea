@@ -31,6 +31,18 @@ echo "Je bent op de dashboard";
         <div class="item items2">
             Test
         </div>
+        <div class="item items3">
+            Test
+        </div>
+        <div class="item items4">
+            Test
+        </div>
+        <div class="item items5">
+            Test
+        </div>
+        <div class="item items6">
+            Test
+        </div>
     </div>
     <footer>
 
