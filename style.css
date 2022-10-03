@@ -9,6 +9,8 @@ p {
   color: white;
 }
 .main {
+  display: grid;
+  grid-template-columns: 50%, 50%;
   border: 2px;
   background-color: lightblue;
 }
