@@ -2,6 +2,7 @@
 
 
 $email = $_POST["email"];
+$password = $_POST["wachtwoord"];
 
 require 'classes/database.php';
 
