@@ -22,12 +22,14 @@ echo "Je bent op de dashboard";
 
 <body>
     <header>
-        <p>Test</p>
+        <h1>Welkom bij Snack'in Sea!</h1>
     </header>
     <div class="main">
-        Test
-        <div>
-
+        <div class="item items1">
+            Test
+        </div>
+        <div class="item items2">
+            Test
         </div>
     </div>
     <footer>

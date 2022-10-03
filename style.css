@@ -10,7 +10,13 @@ p {
 }
 .main {
   display: grid;
-  grid-template-columns: 50%, 50%;
-  border: 2px;
-  background-color: lightblue;
+  grid-template-columns: 350px 350px;
+}
+.item {
+  background-color: rgb(0, 225, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1px;
+  margin-right: 1px;
 }
