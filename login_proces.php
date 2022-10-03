@@ -18,7 +18,7 @@ if (!is_null($result)) {
 
         session_start();
 
-        $_SESSION["user"] = $user;
+        $_SESSION["email"] = $user["email"];
         $_SESSION["is_logged_in"] = true;
 
         header("location: dashboard.php");
