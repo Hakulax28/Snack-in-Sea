@@ -22,6 +22,7 @@ if (!is_null($result)) {
         $_SESSION["email"] = $user["email"];
         $_SESSION["is_logged_in"] = true;
         //$_SESSION["rol"] = $user["rol"];
+        header("location: dashboard.php");
     }
 
     //if ($_SESSION["rol"] == "medewerker") {
