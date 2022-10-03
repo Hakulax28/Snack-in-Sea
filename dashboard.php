@@ -3,10 +3,10 @@
 session_start();
 
 if (!$_SESSION["isLoggedIn"]) {
-    echo "Deze gebruiker mag hier niet komen";
+    //echo "Deze gebruiker mag hier niet komen";
 }
 
-echo "Je bent op de dashboard";
+//echo "Je bent op de dashboard";
 ?>
 
 <!DOCTYPE html>
@@ -26,13 +26,13 @@ echo "Je bent op de dashboard";
     </header>
     <div class="main">
         <div class="item items1">
-            Test
+            <h1 class="titel">Bestel</h1>
         </div>
         <div class="item items2">
-            Test
+            <h1 class="titel">Producten</h1>
         </div>
         <div class="item items3">
-            Test
+            <h1 class="titel">Bestel</h1>
         </div>
         <div class="item items4">
             Test
