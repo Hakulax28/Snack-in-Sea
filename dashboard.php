@@ -26,7 +26,7 @@ session_start();
     </header>
     <div class="main">
         <div class="item items1">
-            <a href="">Bestel</a>
+
         </div>
         <div class="item items2">
             <a href="">Bestel</a>
@@ -35,7 +35,10 @@ session_start();
             <a href="">Product</a>
         </div>
         <div class="item items4">
-            <a href="">Bestel</a>
+            <h1>Bestellingen</h1>
+            <ul>
+                <li></li>
+            </ul>
         </div>
     </div>
     <footer>

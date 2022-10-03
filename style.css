@@ -22,9 +22,7 @@ p {
 }
 h1 {
   color: white;
-  font-size: 45px;
   font-family: Georgia, "Times New Roman", Times, serif;
-  margin-top: 5px;
 }
 .main {
   display: grid;
