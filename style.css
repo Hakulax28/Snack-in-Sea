@@ -8,3 +8,7 @@ header {
 p {
   color: white;
 }
+.main {
+  border: 2px;
+  background-color: lightblue;
+}
