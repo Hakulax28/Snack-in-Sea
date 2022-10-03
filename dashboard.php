@@ -32,7 +32,7 @@ session_start();
             <a href="">Bestel</a>
         </div>
         <div class="item item3">
-            <a href="">Product</a>
+            <a href="product-overzicht.php">Product</a>
         </div>
         <div class="item item4">
 
