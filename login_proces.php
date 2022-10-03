@@ -13,7 +13,7 @@ if (!is_null($result)) {
     $user = mysqli_fetch_assoc($result); // 1 rij
 
 
-    if ($user["password"] == $_POST["password"]) {
+    if ($user["wachtwoord"] == $_POST["wachtwoord"]) {
         //de gebruiker met email en wachtwoord zijn bekend. YEAAH!!
 
         session_start();
