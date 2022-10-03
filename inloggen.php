@@ -14,6 +14,9 @@
         <input type="text" name="email" id="" placeholder="Vul je username of email in">
         <p>Wachtwoord</p>
         <input type="text" name="wachtwoord" id="" placeholder="Vul je wachtwoord in">
+        <p>Wat is uw rol?</p>
+        <input type="radio" name="rol" id="klant">klant<br>
+        <input type="radio" name="rol" id="medewerker">medewerker<br>
         <button type="submit">Inloggen</button>
     </form>
 </body>
