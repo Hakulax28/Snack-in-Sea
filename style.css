@@ -1,10 +1,10 @@
 body {
   background-color: darkblue;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 header {
   background-color: black;
   height: 55px;
+  padding-bottom: 15px;
   text-align: center;
   border-style: dashed;
   border-color: cyan;
@@ -17,17 +17,19 @@ footer {
   border-color: cyan;
 }
 p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: white;
   text-align: justify;
 }
 h1 {
   color: white;
+  text-align: center;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 .main {
   display: grid;
   text-align: center;
-  grid-template-columns: 270px 650px 650px 270px;
+  grid-template-columns: 252px 660px 660px 252px;
   grid-template-rows: 720px;
 }
 .item {
@@ -40,4 +42,14 @@ h1 {
   margin-bottom: 5px;
   margin-top: 5px;
   margin-right: 5px;
+}
+.item1,
+.item4 {
+  background-color: black;
+  border-style: dashed;
+}
+
+a {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 35px;
 }

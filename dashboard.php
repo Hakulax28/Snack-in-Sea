@@ -25,22 +25,23 @@ session_start();
         <h1>Welkom bij Snack'in Sea!</h1>
     </header>
     <div class="main">
-        <div class="item items1">
+        <div class="item item1">
 
         </div>
-        <div class="item items2">
+        <div class="item item2">
             <a href="">Bestel</a>
         </div>
-        <div class="item items3">
+        <div class="item item3">
             <a href="">Product</a>
         </div>
-        <div class="item items4">
-            <h1>Bestellingen</h1>
-            <ul>
-                <li></li>
-            </ul>
+        <div class="item item4">
+
         </div>
     </div>
+    <h1>Bestellingen</h1>
+    <ul>
+        <li>Bestelling1</li>
+    </ul>
     <footer>
 
     </footer>
