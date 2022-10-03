@@ -2,9 +2,9 @@
 
 session_start();
 
-if (!$_SESSION["isLoggedIn"]) {
-    //echo "Deze gebruiker mag hier niet komen";
-}
+//if (!$_SESSION["isLoggedIn"]) {
+//echo "Deze gebruiker mag hier niet komen";
+//}
 
 //echo "Je bent op de dashboard";
 ?>
