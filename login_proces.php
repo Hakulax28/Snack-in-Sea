@@ -3,7 +3,7 @@
 
 $email = $_POST["email"];
 
-require 'database.php';
+require 'classes/database.php';
 
 $sql = "SELECT FROM users WHERE email = $email";
 
@@ -21,6 +21,6 @@ if (!is_null($result)) {
         $_SESSION["user"] = $user;
         $_SESSION["is_logged_in"] = true;
 
-        header("location: classes/dashboard.php");
+        header("location: dashboard.php");
     }
 }
