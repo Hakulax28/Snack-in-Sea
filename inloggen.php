@@ -7,10 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <form action="login_proces.php" method="post">
-        <input type="text" name="username_email" id="" placeholder="Vul je username of email in">
+        <p>E-Mail</p>
+        <input type="text" name="email" id="" placeholder="Vul je username of email in">
+        <p>Wachtwoord</p>
+        <input type="text" name="wachtwoord" id="" placeholder="Vul je wachtwoord in">
         <button type="submit">Inloggen</button>
     </form>
 </body>
+
 </html>
