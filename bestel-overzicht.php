@@ -1,3 +1,5 @@
+<?php require 'classes/database.php'; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
