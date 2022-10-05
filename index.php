@@ -39,6 +39,7 @@ if (!$_SESSION["is_logged_in"]) {
    <ul>
       <li>Bestelling1</li>
    </ul>
+
    <footer>
       <a href="loguit.php" class="shadow-sm btn btn-danger">Log uit</a>
 
