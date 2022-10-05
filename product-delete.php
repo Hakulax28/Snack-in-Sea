@@ -4,12 +4,12 @@ session_start();
 
 print_r($_GET["id"]);
 
-require 'database.php';
+require 'classes/database.php';
 
 $id = $_GET['id'];
 
-$sql = "DELETE FROM message WHERE id = $id";
+$sql = "DELETE FROM product WHERE id = $id";
 
-if (mysqli_query($conn, $sql)) {
-    header("location: melding-overzicht.php");
+if (mysqli_query((new Database())->getConnection(), $sql)) {
+    header("location: product-overzicht.php");
 }

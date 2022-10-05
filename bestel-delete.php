@@ -8,8 +8,8 @@ require 'database.php';
 
 $id = $_GET['id'];
 
-$sql = "DELETE FROM message WHERE id = $id";
+$sql = "DELETE FROM besteling WHERE id = $id";
 
-if (mysqli_query($conn, $sql)) {
-    header("location: melding-overzicht.php");
+if (mysqli_query((new Database())->getConnection(), $sql)) {
+    header("location: bestel-overzicht.php");
 }
