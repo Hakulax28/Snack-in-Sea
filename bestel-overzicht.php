@@ -18,7 +18,6 @@
    </header>
 
    <a href="registreer-melding.php" class="shadow-sm btn btn-success">Voeg een melding toe</a>
-   <a href="loguit.php" class="shadow-sm btn btn-danger">Log uit</a>
 
    <p></p>
 
@@ -61,7 +60,7 @@
    </table>
 
    <footer>
-
+      <a href="dashboard.php">Ga hier terug</a>
    </footer>
 </body>
 
