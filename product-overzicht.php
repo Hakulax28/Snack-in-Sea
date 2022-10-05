@@ -55,7 +55,7 @@ if (isset($_POST["submit"])) {
          <?php foreach ($products as $product) : ?>
             <tr>
                <!--<td><?php echo $product["id"] ?></td>-->
-               <td><a href=""><?php echo $product["naam"] ?></a></td>
+               <td><a href="product-info.php"><?php echo $product["naam"] ?></a></td>
                <td><?php echo $product["kostprijs"] ?></td>
                <td><?php echo $product["verkoopprijs"] ?></td>
                <td><?php echo $product["category"] ?></td>
