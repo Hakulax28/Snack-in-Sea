@@ -16,7 +16,7 @@ $sql = "SELECT * FROM besteling";
 //ON us2.id = message.personeel_id";
 
 if ($result = mysqli_query((new Database())->getConnection(), $sql)) {
-   $products = mysqli_fetch_all($result, MYSQLI_ASSOC);
+   $bestels = mysqli_fetch_all($result, MYSQLI_ASSOC);
 }
 ?>
 
@@ -37,7 +37,7 @@ if ($result = mysqli_query((new Database())->getConnection(), $sql)) {
       <h1>Welkom bij Snack'in Sea!</h1>
    </header>
 
-   <a href="registreer-melding.php" class="shadow-sm btn btn-success">Voeg een melding toe</a>
+   <a href="registreer-bestel.php" class="shadow-sm btn btn-success">Voeg een melding toe</a>
 
    <p></p>
 
@@ -47,33 +47,25 @@ if ($result = mysqli_query((new Database())->getConnection(), $sql)) {
          <tr>
             <!--<th>ID</th>-->
             <th>Gebruikers die de besteling hebben gemaakt</th>
-            <th>Bericht</th>
-            <th>Status</th>
-            <th>Categorie</th>
-            <th>Datum</th>
-            <th>Opmerking</th>
-            <th>Personeels die het behandelen</th>
+            <th>De product dat ze willen</th>
+            <th>De hoeveelheid</th>
+            <th>Wat het op dit moment is</th>
+            <th>De tijd van bestelling</th>
             <th>Verwijder</th>
             <th>Update</th>
          </tr>
       </thead>
       <tbody>
-         <?php foreach ($messages as $message) : ?>
+         <?php foreach ($bestels as $bestel) : ?>
             <tr>
-               <!--<td><?php echo $message["id"] ?></td>-->
-               <td><?php echo $message["gebr_voornaam"] ?></td>
-               <td><?php echo $message["bericht"] ?></td>
-               <td><?php echo $message["status"] ?></td>
-               <td><?php echo $message["categorie_naam"] ?></td>
-               <td><?php echo $message["datum"] ?></td>
-               <td><?php echo $message["opmerking"] ?></td>
-               <td><?php echo $message["pers_voornaam"] ?></td>
-               <?php
-
-               if ($_SESSION['rol'] == "personeel") : ?>
-                  <td><a href="melding-delete.php?id=<?php echo $message["id"] ?>" class="btn btn-danger">Delete</a></td>
-                  <td><a href="melding-update.php?id=<?php echo $message["id"] ?>" class="btn btn-warning">Update</a></td>
-               <?php endif ?>
+               <!--<td><?php echo $bestel["id"] ?></td>-->
+               <td><?php echo $bestel["user_id"] ?></td>
+               <td><?php echo $bestel["product_id"] ?></td>
+               <td><?php echo $bestel["hoeveelheid"] ?></td>
+               <td><?php echo $bestel["status"] ?></td>
+               <td><?php echo $bestel["tijd"] ?></td>
+               <td><a href="bestel-delete.php?id=<?php echo $bestel["id"] ?>" class="btn btn-danger">Delete</a></td>
+               <td><a href="bestel-update.php?id=<?php echo $bestel["id"] ?>" class="btn btn-warning">Update</a></td>
             </tr>
          <?php endforeach; ?>
       </tbody>
