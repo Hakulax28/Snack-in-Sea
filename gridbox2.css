@@ -1,7 +1,8 @@
 .product {
   display: grid;
   text-align: center;
-  grid-template-columns: 100px 1600px;
+  grid-template-columns: 1600px;
+  grid-template-rows: 300px;
 }
 .product1 {
   background-color: rgb(0, 182, 206);
