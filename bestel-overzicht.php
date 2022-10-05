@@ -6,14 +6,12 @@
 
 $sql = "SELECT * FROM besteling";
 
-//$sql = "SELECT *, categorie.naam as categorie_naam, us1.voornaam as gebr_voornaam, us2.voornaam as pers_voornaam
-//FROM product 
-//JOIN categorie 
-//ON categorie.id = message.categorie_id 
-//JOIN users as us1
-//ON us1.id = message.gebruiker_id 
-//JOIN users as us2
-//ON us2.id = message.personeel_id";
+//$sql = "SELECT *, users.voornaam as users_voornaam, product.naam as product_naam
+//FROM besteling 
+//JOIN users 
+//ON users.id = besteling.user_id 
+//JOIN product
+//ON product.id = besteling.product_id 
 
 if ($result = mysqli_query((new Database())->getConnection(), $sql)) {
    $bestels = mysqli_fetch_all($result, MYSQLI_ASSOC);
