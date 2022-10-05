@@ -6,7 +6,7 @@ require 'classes/database.php';
 
 $id = $_GET["id"]; //17
 
-$sql = "SELECT * FROM bestel WHERE id = $id LIMIT 1";
+$sql = "SELECT * FROM besteling WHERE id = $id LIMIT 1";
 
 if ($result = mysqli_query((new Database())->getConnection(), $sql)) {
 
