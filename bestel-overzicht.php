@@ -1,5 +1,25 @@
 <?php require 'classes/database.php'; ?>
 
+<?php
+
+// hier moet de info van de anderen tabelen te voor schijn komen. 
+
+$sql = "SELECT * FROM besteling";
+
+//$sql = "SELECT *, categorie.naam as categorie_naam, us1.voornaam as gebr_voornaam, us2.voornaam as pers_voornaam
+//FROM product 
+//JOIN categorie 
+//ON categorie.id = message.categorie_id 
+//JOIN users as us1
+//ON us1.id = message.gebruiker_id 
+//JOIN users as us2
+//ON us2.id = message.personeel_id";
+
+if ($result = mysqli_query((new Database())->getConnection(), $sql)) {
+   $products = mysqli_fetch_all($result, MYSQLI_ASSOC);
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,7 +46,7 @@
       <thead>
          <tr>
             <!--<th>ID</th>-->
-            <th>Gebruikers die de bericht hebben gemaakt</th>
+            <th>Gebruikers die de besteling hebben gemaakt</th>
             <th>Bericht</th>
             <th>Status</th>
             <th>Categorie</th>
