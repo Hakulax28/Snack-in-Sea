@@ -50,7 +50,7 @@ if (isset($_POST["submit"])) {
                <td><?php echo $product["naam"] ?></td>
                <td><?php echo $product["info"] ?></td>
                <td><?php echo $product["category"] ?></td>
-               <td><img src="../img/" <?php echo $product["foto"] ?>.jpg alt="product_foto" width="200px" height="200px"></td>
+               <td><img src="../img/" <?php echo $product["foto"] ?>.jpg alt="product.foto" width="200px" height="200px"></td>
             </tr>
          <?php endforeach; ?>
       </tbody>
