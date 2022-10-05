@@ -27,7 +27,6 @@ session_start();
     </header>
     <div class="main">
         <div class="item item1">
-
         </div>
         <div class="item item2">
             <a href="bestel-overzicht.php">Bestel</a>
@@ -36,7 +35,6 @@ session_start();
             <a href="product-overzicht.php">Product</a>
         </div>
         <div class="item item4">
-
         </div>
     </div>
     <h1>Bestellingen</h1>
@@ -44,7 +42,8 @@ session_start();
         <li>Bestelling1</li>
     </ul>
     <footer>
-        <a href="loguit.php" class="shadow-sm btn btn-danger">Log uit</a>
+        <a href="loguit.php">Log uit</a>
+        <a href="user-overzicht">Gebruikers</a>
     </footer>
 </body>
 
