@@ -34,7 +34,7 @@ if (isset($_POST["submit"])) {
       <h1>Welkom bij Snack'in Sea!</h1>
    </header>
 
-   <a href="registreer-melding.php" class="shadow-sm btn btn-success">Voeg een melding toe</a>
+   <a href="registreer-product.php" class="shadow-sm btn btn-success">Voeg een product toe</a>
 
    <p></p>
 
@@ -59,8 +59,8 @@ if (isset($_POST["submit"])) {
                <td><?php echo $product["kostprijs"] ?></td>
                <td><?php echo $product["verkoopprijs"] ?></td>
                <td><?php echo $product["category"] ?></td>
-               <td><a href="melding-delete.php?id=<?php echo $product["id"] ?>" class="btn btn-danger">Delete</a></td>
-               <td><a href="melding-update.php?id=<?php echo $product["id"] ?>" class="btn btn-warning">Update</a></td>
+               <td><a href="product-delete.php?id=<?php echo $product["id"] ?>" class="btn btn-danger">Delete</a></td>
+               <td><a href="product-update.php?id=<?php echo $product["id"] ?>" class="btn btn-warning">Update</a></td>
             </tr>
          <?php endforeach; ?>
       </tbody>
