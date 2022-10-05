@@ -30,7 +30,7 @@ session_start();
 
         </div>
         <div class="item item2">
-            <a href="">Bestel</a>
+            <a href="bestel-overzicht.php">Bestel</a>
         </div>
         <div class="item item3">
             <a href="product-overzicht.php">Product</a>
