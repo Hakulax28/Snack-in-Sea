@@ -9,6 +9,26 @@ session_start();
 //echo "Je bent op de dashboard";
 ?>
 
+<?php require 'classes/database.php'; ?>
+
+<?php
+
+// hier moet de info van de anderen tabelen te voor schijn komen. 
+
+$sql = "SELECT * FROM besteling";
+
+$sql = "SELECT *, users.voornaam as user_id, product.naam as product_id
+FROM besteling 
+JOIN users 
+ON users.id = besteling.user_id 
+JOIN product
+ON product.id = besteling.product_id";
+
+if ($result = mysqli_query((new Database())->getConnection(), $sql)) {
+    $bestels = mysqli_fetch_all($result, MYSQLI_ASSOC);
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -35,12 +55,35 @@ session_start();
             <a href="product-overzicht.php">Product</a>
         </div>
         <div class="item item4">
+
         </div>
     </div>
     <h1>Bestellingen</h1>
-    <ul>
-        <li>Bestelling1</li>
-    </ul>
+    <table class="table table-striped table-dark">
+
+        <thead>
+            <tr>
+                <!--<th>ID</th>-->
+                <th>Gebruikers die de besteling hebben gemaakt</th>
+                <th>De product dat ze willen</th>
+                <th>De hoeveelheid</th>
+                <th>Wat het op dit moment is</th>
+                <th>De tijd van bestelling</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php foreach ($bestels as $bestel) : ?>
+                <tr>
+                    <!--<td><?php echo $bestel["id"] ?></td>-->
+                    <td><?php echo $bestel["user_id"] ?></td>
+                    <td><?php echo $bestel["product_id"] ?></td>
+                    <td><?php echo $bestel["hoeveelheid"] ?></td>
+                    <td><?php echo $bestel["status"] ?></td>
+                    <td><?php echo $bestel["tijd"] ?></td>
+                </tr>
+            <?php endforeach; ?>
+        </tbody>
+    </table>
     <footer>
         <a href="loguit.php">Log uit</a>
         <a href="user-overzicht">Gebruikers</a>

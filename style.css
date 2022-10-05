@@ -31,3 +31,7 @@ a {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 35px;
 }
+
+table {
+  background-color: rgb(188, 222, 253);
+}
