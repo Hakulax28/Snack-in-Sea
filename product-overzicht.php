@@ -11,9 +11,18 @@
 </head>
 
 <body>
-   <div class="main">
+   <header>
+      <h1>Bekijk naar de producten</h1>
+   </header>
+
+   <div class="product">
+      <div class="product1">test</div>
+      <div class="product1">test</div>
       <div class="product1">test</div>
    </div>
+   <footer>
+      <a href="dashboard.php">Ga hier terug</a>
+   </footer>
 </body>
 
 </html>
