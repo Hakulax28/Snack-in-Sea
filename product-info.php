@@ -32,7 +32,7 @@ if (isset($_POST["submit"])) {
 <body>
    <header>
       <h1>Welkom bij Snack'in Sea!</h1>
-   </header>
+   </header><br>
    <h1>Producten</h1>
    <table class="table table-striped table-dark">
 
@@ -50,7 +50,7 @@ if (isset($_POST["submit"])) {
                <td><?php echo $product["naam"] ?></td>
                <td><?php echo $product["info"] ?></td>
                <td><?php echo $product["category"] ?></td>
-               <td><img src="/img/" <?php echo $product["foto"] ?>.jpg alt="foto" width="200px" height="200px"></td>
+               <td><img src="../img/" <?php echo $product["foto"] ?>.jpg alt="foto" width="200px" height="200px"></td>
             </tr>
          <?php endforeach; ?>
       </tbody>
