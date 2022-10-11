@@ -3,8 +3,35 @@ body {
 }
 header {
   background-color: black;
+  height: 55px;
+  padding-bottom: 15px;
   text-align: center;
+  border-style: dashed;
+  border-color: cyan;
+}
+footer {
+  background-color: black;
+  height: 55px;
+  text-align: center;
+  border-style: dashed;
+  border-color: cyan;
 }
 p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: white;
+  text-align: justify;
+}
+h1 {
+  color: white;
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+a {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 35px;
+}
+
+table {
+  background-color: rgb(188, 222, 253);
 }
